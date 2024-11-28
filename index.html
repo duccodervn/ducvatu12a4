@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webcuatuvaduc</title>
+    <style>
+        body{
+            background-color: rgb(52, 54, 58);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            min-height:100vh;
+            flex-direction: column;/*để web dọc*/
+        }
+        table{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            width:50%;
+            border-collapse:collapse;
+            background-color: rgb(0, 0, 0);
+            color:aliceblue
+        }
+        .STT{
+            text-align: center;
+        }
+        .table.table-hover tr:hover{
+            background:rgb(107, 96, 96);
+        }
+        .sum{
+            font-size: 20px;
+            color:aliceblue;
+            justify-content: center;
+            align-items: center;
+        }
+        .one{
+            color: rgb(30, 170, 212);
+        }
+        .anh{
+            display:flex;
+            flex-direction: row;/*để web ngang*/
+            gap:90px
+            
+        }
+        .hile{
+           width: 300px;
+           margin-top: 50%;
+           height:auto;
+           transition:transform 0.3s ease;
+        }
+        .hile:hover{
+            transform: scale(1.1);
+
+        }
+        .hi{
+            width: 300px;
+            margin-top: 50%;
+            height:auto;
+            transition: transform 0.3s ease;
+        }
+        .hi:hover{
+            transform: scale(1.1);
+        }
+        .images{
+            position: relative;/* để chữ ngang*/
+            
+        }
+        .text1{
+            position:relative;
+            font-size: 16px;
+            top:25%;/*khoảng cách phía trên*/
+            left: 50%;
+            transform: translateX(-50%);/*khoảng cách trục X bên phải*/
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color:brown">DANH SÁCH CÁC TRƯỜNG ĐẠI HỌC VIỆT BÁCH ĐĂNG KÍ DỰ TUYỂN</h2>
+      <div class="sum">
+    <ol type="I">
+        <li class="one">Các Trường Kĩ Thuật-Công Nghệ</li>
+          <ol type="a">
+            <li>Đại Học Bách Khoa Hà Nội</li>
+            <li>Trường Đại Học Công Nghệ,ĐHQGHN</li>
+          </ol>
+        <li class="one">Các Trường Kinh Tế</li>
+             <ol type="a" start="3">
+            <li>Trường Đại Học Kinh Tế Quốc Dân</li>
+            <li>Trường Đại Học Ngoại Thương </li>
+        </ol>
+        <Li class="one">Các Trường Quân Đội-Công An</Li>
+              <ol type="a" start="5">
+               <li>Học Viện Kĩ Thuật Quân Sự </li>
+               <li> Học Viện Anh Ninh Nhân Dân</li>
+        </ol>
+    </ol>
+    <audio src="/media/sound.mp3" controls></audio>
+   </div>
+    <table border="1" class="table table-hover">
+        <caption>
+            <h2 style="color: rgb(236, 218, 227);">ĐÂY LÀ WEB HỌC SINH 12A4</h2>
+        </caption>
+        <tr>
+            <th>STT</th>
+            <th>Họ Và Tên</th>
+            <th>Chức vụ</th>
+        </tr>
+        <tr>
+            <td class="STT">1</td>
+            <td>Nguyễn Viết Tú</td>
+            <td>Lớp trưởng</td>
+        </tr>
+        <tr>
+            <td class="STT">2</td>
+            <td>Trần Phước Đức</td>
+            <td>Học Sinh</td>
+        </tr>
+    </table>
+    
+    <div class="anh"> 
+        <div class="images">
+            <div class="text1">NGUYỄN VIẾT TÚ</div>
+
+        <img src="/image/chillboy.jpg" class="hile" alt="NGUYỄN VIẾT TÚ" title="NGUYỄN VIẾT TÚ">
+        </div>
+        <div class=images>
+        <div class="text1">TRẦN PHƯỚC ĐỨC</div>
+        <img src="/image/chillboy.jpg" class="hi"alt="TRẦN PHƯỚC ĐỨC"title="TRẦN PHƯỚC ĐỨC">
+        </div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d2vm9sxBjms?si=novcmyxE90BMKxoW"
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe
+</body>
+</html>
